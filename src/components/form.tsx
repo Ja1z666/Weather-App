@@ -1,10 +1,8 @@
 import React from "react";
 
-const Form = props => (
+export const Form = (props: any) => (
     <form onSubmit={props.weatherMethod}>
-        <input type="text" name="city" placeholder="Город"/>
+        <input type="text" name="city" placeholder="Город" />
         <button>Получить погоду</button>
     </form>
 );
-
-export default Form;

@@ -1,7 +1,7 @@
 import React from "react";
-import Info from "./components/info";
-import Form from "./components/form";
-import Weather from "./components/weather";
+import { Info } from "./components/info";
+import { Form } from "./components/form";
+import { Weather } from "./components/weather";
 
 const API_KEY = "4243f663d86eabbb1ceb89a91a02d221";
 
@@ -17,7 +17,7 @@ const stateDefault = {
 class App extends React.Component {
     state = stateDefault;
 
-    gettingWeather = async (e) => {
+    gettingWeather = async (e: any) => {
         e.preventDefault();
         const city = e.target.elements.city.value;
 
